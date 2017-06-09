@@ -2,14 +2,14 @@
 #include "main_window.h"
 
 MainWindow::MainWindow(QWidget *parent)
-    : DMainWindow(parent)
+    : QMainWindow(parent)
 {
     widget = new QWidget();
     layout = new QVBoxLayout();
     searchLayout = new QHBoxLayout();
     pronLayout = new QHBoxLayout();
     edit = new QLineEdit();
-    button = new DBaseButton("查询");
+    button = new QPushButton("查询");
     nameLabel = new QLabel("");
     ukPron = new QLabel("");
     usPron = new QLabel("");

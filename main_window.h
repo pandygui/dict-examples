@@ -1,17 +1,15 @@
 #ifndef MAIN_WINDOW_H
 #define MAIN_WINDOW_H
 
-#include <DMainWindow>
+#include <QMainWindow>
 #include <QVBoxLayout>
 #include <QHBoxLayout>
 #include <QLabel>
 #include <QLineEdit>
-#include <dbasebutton.h>
+#include <QPushButton>
 #include "dict.h"
 
-DWIDGET_USE_NAMESPACE
-
-class MainWindow : public DMainWindow
+class MainWindow : public QMainWindow
 {
     Q_OBJECT
 
@@ -25,7 +23,7 @@ private:
     QHBoxLayout *searchLayout;
     QHBoxLayout *pronLayout;
     QLineEdit *edit;
-    DBaseButton *button;
+    QPushButton *button;
     QLabel *nameLabel;
     QLabel *ukPron;
     QLabel *usPron;
